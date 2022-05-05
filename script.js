@@ -19,6 +19,7 @@ function render() {
 
     responseData.data.forEach(item => {
         let li = document.createElement('li');
+        li.classList.add('liInfo');
         let pEmail=document.createElement('p');
         pEmail.textContent= item.email;
 
@@ -42,7 +43,7 @@ document.getElementById('ul-list').innerHTML = ' ';
     function errorRender(){
         let p = document.createElement('p');
         p.textContent = 'server error';
-        document.getElementById('api-user-email').appendChild(p);
+        document.getElementById('user-email').appendChild(p);
     }
 
     document.getElementById('loadPrev').addEventListener('click', function(){

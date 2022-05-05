@@ -1,15 +1,45 @@
-.body-element{
-    background-color: blueviolet;
-}
-.active{
-    background-color: brown;
-}
 
+#main-section{
+    margin: 0 auto;
+    padding: 40px;
+}
 #ul-list{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
 }
 .image-block{
-    height: 100px;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button{
+   height: 35px;
+   width:150px ;
+   margin-top: 30px;
+   background-color:skyblue;
+   color: white;
+   border: none;
+   border-radius: 15px;
+   cursor: pointer;
+   font-size:14px ;
+   font-weight: bold;
+}
+
+button:hover{
+    opacity: 70%;
+    transition: 0.2s;
+}
+.liInfo{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+
+}
+.liInfo:hover{
+    opacity: 40%;
+    transition: 2s;
 }
